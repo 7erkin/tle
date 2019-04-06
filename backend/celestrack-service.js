@@ -6,12 +6,9 @@ const needNameToTransform = (name) => {
 }
 
 const transformName = (name) => {
-    console.log('TR:', name)
-    let res = name.toString();
-    res.replace("(", "a");
-    res.replace(")", "\\)");
-    console.log("AFTER TR:", name)
-    return res;
+    return name
+            .replace("(", "\\(")
+            .replace(")", "\\)");
 }
 
 class CelestrackService {

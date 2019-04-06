@@ -8,6 +8,7 @@ const createSatelliteGroups = () => {
   const groups = [];
   const begin = 'a'.charCodeAt(0);
   const end = 'z'.charCodeAt(0) + 1;
+  
   for(let i = begin; i < end; ++i)
     groups.push({id: i, name: String.fromCharCode(i).toUpperCase()})
 
@@ -80,6 +81,16 @@ class App extends React.Component {
       })
     }
 
+    saveLastRequestedSatellites = () => {
+      window.localStorage.setItem('lastRequestedSatellites', JSON.stringify(this.state.pointedSatellites))
+    }
+
+    applyLastRequestedSatellites = () => {
+      this.setState({
+        pointedSatellites: JSON.parse(window.localStorage.getItem('lastRequestedSatellites'))
+      })
+    }
+
     stopLoadingSatellites = () => {
       this.setState({
         loadingSatellites: false
@@ -104,7 +115,9 @@ class App extends React.Component {
           satelliteGroups={satelliteGroups}
           onSatelliteClick={this.onSatelliteClick}
           onSatelliteGroupClick={this.onSatelliteGroupClick}
-          onReset={this.onResetPointedSatellites}/>
+          onReset={this.onResetPointedSatellites}
+          saveLastRequestedSatellites={this.saveLastRequestedSatellites}
+          applyLastRequestedSatellites={this.applyLastRequestedSatellites}/>
       );
     }
 }
