@@ -1,0 +1,14 @@
+.accordeon-card ul {
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.accordeon-card ul .checked {
+    background-color: snow;
+}
+
+.accordeon-card li {
+    padding-left: 40px;
+}

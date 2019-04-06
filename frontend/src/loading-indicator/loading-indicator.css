@@ -1,0 +1,183 @@
+.cssload-container *, .cssload-container *:before, .cssload-container *:after{
+	box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+}
+
+.cssload-container {
+	margin: 34px auto;
+	position: relative;
+	width: 67px;
+	height: 67px;
+}
+.cssload-container > div {
+	float: left;
+	background: rgba(185,108,255,0.94);
+	height: 100%;
+	width: 3px;
+	margin-right: 1px;
+	display: inline-block;
+}
+
+.cssload-container {
+	position: relative;
+	width: 67px;
+	height: 67px;
+}
+.cssload-container > div {
+	background: transparent;
+	border: 5px solid transparent;
+	border-color: rgb(255,255,255) transparent;
+	border-radius: 100%;
+		-o-border-radius: 100%;
+		-ms-border-radius: 100%;
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate"("-50%, -50%")";
+		-o-transform: translate"("-50%, -50%")";
+		-ms-transform: translate"("-50%, -50%")";
+		-webkit-transform: translate"("-50%, -50%")";
+		-moz-transform: translate"("-50%, -50%")";
+	transform: translate(-50%, -50%) rotate(0);
+		-o-transform: translate(-50%, -50%) rotate(0);
+		-ms-transform: translate(-50%, -50%) rotate(0);
+		-webkit-transform: translate(-50%, -50%) rotate(0);
+		-moz-transform: translate(-50%, -50%) rotate(0);
+	animation: cssload-wave 2s infinite ease-in-out;
+		-o-animation: cssload-wave 2s infinite ease-in-out;
+		-ms-animation: cssload-wave 2s infinite ease-in-out;
+		-webkit-animation: cssload-wave 2s infinite ease-in-out;
+		-moz-animation: cssload-wave 2s infinite ease-in-out;
+}
+.cssload-container .cssload-shaft1 {
+	animation-delay: 0.1s;
+		-o-animation-delay: 0.1s;
+		-ms-animation-delay: 0.1s;
+		-webkit-animation-delay: 0.1s;
+		-moz-animation-delay: 0.1s;
+	width: 13px;
+	height: 13px;
+}
+.cssload-container .cssload-shaft2 {
+	animation-delay: 0.2s;
+		-o-animation-delay: 0.2s;
+		-ms-animation-delay: 0.2s;
+		-webkit-animation-delay: 0.2s;
+		-moz-animation-delay: 0.2s;
+	width: 17px;
+	height: 17px;
+}
+.cssload-container .cssload-shaft3 {
+	animation-delay: 0.3s;
+		-o-animation-delay: 0.3s;
+		-ms-animation-delay: 0.3s;
+		-webkit-animation-delay: 0.3s;
+		-moz-animation-delay: 0.3s;
+	width: 24px;
+	height: 24px;
+}
+.cssload-container .cssload-shaft4 {
+	animation-delay: 0.4s;
+		-o-animation-delay: 0.4s;
+		-ms-animation-delay: 0.4s;
+		-webkit-animation-delay: 0.4s;
+		-moz-animation-delay: 0.4s;
+	width: 30px;
+	height: 30px;
+}
+.cssload-container .cssload-shaft5 {
+	animation-delay: 0.5s;
+		-o-animation-delay: 0.5s;
+		-ms-animation-delay: 0.5s;
+		-webkit-animation-delay: 0.5s;
+		-moz-animation-delay: 0.5s;
+	width: 37px;
+	height: 37px;
+}
+.cssload-container .cssload-shaft6 {
+	animation-delay: 0.6s;
+		-o-animation-delay: 0.6s;
+		-ms-animation-delay: 0.6s;
+		-webkit-animation-delay: 0.6s;
+		-moz-animation-delay: 0.6s;
+	width: 44px;
+	height: 44px;
+}
+.cssload-container .cssload-shaft7 {
+	animation-delay: 0.7s;
+		-o-animation-delay: 0.7s;
+		-ms-animation-delay: 0.7s;
+		-webkit-animation-delay: 0.7s;
+		-moz-animation-delay: 0.7s;
+	width: 51px;
+	height: 51px;
+}
+.cssload-container .cssload-shaft8 {
+	animation-delay: 0.8s;
+		-o-animation-delay: 0.8s;
+		-ms-animation-delay: 0.8s;
+		-webkit-animation-delay: 0.8s;
+		-moz-animation-delay: 0.8s;
+	width: 54px;
+	height: 54px;
+}
+.cssload-container .cssload-shaft9 {
+	animation-delay: 0.9s;
+		-o-animation-delay: 0.9s;
+		-ms-animation-delay: 0.9s;
+		-webkit-animation-delay: 0.9s;
+		-moz-animation-delay: 0.9s;
+	width: 57px;
+	height: 57px;
+}
+.cssload-container .cssload-shaft10 {
+	animation-delay: 1s;
+		-o-animation-delay: 1s;
+		-ms-animation-delay: 1s;
+		-webkit-animation-delay: 1s;
+		-moz-animation-delay: 1s;
+	width: 61px;
+	height: 61px;
+}
+
+
+
+@keyframes cssload-wave {
+	50% {
+		transform: translate(-50%, -50%) rotate(360deg);
+		border-color: rgba(128,0,128,0.61) transparent;
+	}
+}
+
+@-o-keyframes cssload-wave {
+	50% {
+		-o-transform: translate(-50%, -50%) rotate(360deg);
+		border-color: rgba(128,0,128,0.61) transparent;
+	}
+}
+
+@-ms-keyframes cssload-wave {
+	50% {
+		-ms-transform: translate(-50%, -50%) rotate(360deg);
+		border-color: rgba(128,0,128,0.61) transparent;
+	}
+}
+
+@-webkit-keyframes cssload-wave {
+	50% {
+		-webkit-transform: translate(-50%, -50%) rotate(360deg);
+		border-color: rgba(128,0,128,0.61) transparent;
+	}
+}
+
+@-moz-keyframes cssload-wave {
+	50% {
+		-moz-transform: translate(-50%, -50%) rotate(360deg);
+		border-color: rgba(128,0,128,0.61) transparent;
+	}
+}
